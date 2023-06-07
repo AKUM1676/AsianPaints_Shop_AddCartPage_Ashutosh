@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="144.073" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Add to Cart" name="Validate user is able to Add to Cart using valid data - Example #1.1" time="72.62">
+<system-out><![CDATA[
+Given Chrome is opened and AsianPaints app is opened........................passed
+When User clicks on Shop Section............................................passed
+Then User navigates on the Shop Page........................................passed
+And User clicks on Wallstickers.............................................passed
+Then User navigates to the Wallstickers page................................passed
+When User clicks on sort by Field...........................................passed
+And User selects Priority- Low to High......................................passed
+Then Application sorts the wall stickers list based on price................passed
+And User clicks on any particular sticker...................................passed
+Then User enters the pincode from sheetname "Sheet1" and rownumber 0........passed
+Then Add to Cart button is successfully clicked.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to Cart" name="Validate user is able to Add to Cart using invalid data - Example #1.1" time="71.129">
+<system-out><![CDATA[
+Given Chrome is opened and AsianPaints app is opened........................passed
+When User clicks on Shop Section............................................passed
+Then User navigates on the Shop Page........................................passed
+And User clicks on Wallstickers.............................................passed
+Then User navigates to the Wallstickers page................................passed
+When User clicks on sort by Field...........................................passed
+And User selects Priority- Low to High......................................passed
+Then Application sorts the wall stickers list based on price................passed
+And User clicks on any particular sticker...................................passed
+Then User enters the pincode from sheetname "Sheet1" and rownumber 1........passed
+Then Add to Cart button is unsuccessfully clicked...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
