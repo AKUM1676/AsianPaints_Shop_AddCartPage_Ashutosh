@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="144.073" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Add to Cart" name="Validate user is able to Add to Cart using valid data - Example #1.1" time="72.62">
+<testsuite name="Cucumber" time="129.638" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Add to Cart" name="Validate user is able to Add to Cart using valid data - Example #1.1" time="66.416">
 <system-out><![CDATA[
 Given Chrome is opened and AsianPaints app is opened........................passed
 When User clicks on Shop Section............................................passed
@@ -15,7 +15,7 @@ Then User enters the pincode from sheetname "Sheet1" and rownumber 0........pass
 Then Add to Cart button is successfully clicked.............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Add to Cart" name="Validate user is able to Add to Cart using invalid data - Example #1.1" time="71.129">
+<testcase classname="Add to Cart" name="Validate user is able to Add to Cart using invalid data - Example #1.1" time="63.013">
 <system-out><![CDATA[
 Given Chrome is opened and AsianPaints app is opened........................passed
 When User clicks on Shop Section............................................passed

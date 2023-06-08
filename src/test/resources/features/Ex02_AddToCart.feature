@@ -1,4 +1,4 @@
-	Feature: Add to Cart
+6	Feature: Add to Cart
  
   Scenario Outline: Validate user is able to Add to Cart using valid data
     Given Chrome is opened and AsianPaints app is opened

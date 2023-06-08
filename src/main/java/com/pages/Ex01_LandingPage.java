@@ -25,6 +25,10 @@ public class Ex01_LandingPage extends Utility {
 	
 	@FindBy(xpath="//img[@title = 'asian-paint-logo']")
     private WebElement asianpaintlogo;
+	
+	@FindBy(xpath="//*[@id='__st_fancy_popup']/iframe")
+
+    private WebElement frame3;
 
 	
 	public Ex01_LandingPage() throws IOException
@@ -58,17 +62,30 @@ public class Ex01_LandingPage extends Utility {
         //Make sure screenshots folder is already created at the project level
         File imageFile = new File(screenshotsPath + screenshotFileName + ".png"); 
         FileUtils.copyFile(binaryFile, imageFile);
-    }
-	public void noThanksButton() throws IOException{
-        driver.switchTo().frame(driver.findElement(By.xpath("//div[@id='st_notification_modal']/iframe")));
-        driver.findElement(By.id("NC_CTA_TWO")).click();
-        driver.switchTo().defaultContent();
-    }
-public void laterButton() throws IOException{
-        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id='__st_fancy_popup']/iframe")));
-        driver.findElement(By.id("__st_bpn_no")).click();
-        driver.switchTo().defaultContent();
-    }
+    } 
+	@FindBy(id="__st_bpn_no")
+    private WebElement dontallow;
+ 
+    public void Dontallow() {
+ 
+            driver.switchTo().frame(frame3);
+ 
+            dontallow.click();
+ 
+            driver.switchTo().defaultContent();
+        }
+
+
+//	public void noThanksButton() throws IOException{
+//        driver.switchTo().frame(driver.findElement(By.xpath("//div[@id='st_notification_modal']/iframe")));
+//        driver.findElement(By.id("NC_CTA_TWO")).click();
+//        driver.switchTo().defaultContent();
+//    }
+//public void laterButton() throws IOException{
+//        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id='__st_fancy_popup']/iframe")));
+//        driver.findElement(By.id("__st_bpn_no")).click();
+//        driver.switchTo().defaultContent();
+//    }
 @FindBy(xpath="//button[text()='ACCEPT ALL COOKIES']") private WebElement acceptCookiesButton;
 public void acceptCookiesButtonValidation() throws IOException
     {

@@ -39,9 +39,10 @@ public class Ex01_Excel extends Utility {
     public void chrome_is_opened_and_asian_paints_app_is_opened() throws Exception {
     	objectMethod();
         Thread.sleep(5000);
-        ldp.noThanksButton();
-    	ldp.laterButton();
+//        ldp.noThanksButton();
+//    	ldp.laterButton();
     	ldp.acceptCookiesButtonValidation();
+    	ldp.Dontallow();
         String actualtitle = ldp.validateLandinPageTitle();
         String expectedtitle = "Trusted Wall Painting, Home Painting & Waterproofing in India - Asian Paints"; 
         assertEquals(expectedtitle, actualtitle);

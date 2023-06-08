@@ -1,87 +1,110 @@
-Project structure:
-
+Project structure: Shop & Add To Cart Page
+ 
 src/main/java:
-	com.config:
-		Config.properties
-		
-	com.pages:
-		LandingPage.java
-		ShoppingPage.java
-		WallStickersPage.java
-		AddToCartPage.java
-			
-	com.utility:
-		Config.java
-		ConfigReader.java
-		Utility.java
-		
+    com.config:
+    Config.properties
+ 
+    com.pages:
+        LandingPage.java
+        ShoppingPage.java
+        WallStickersPage.java
+        AddToCartPage.java
+
+ 
+    com.testdata:
+        testdata.xlsx    
+ 
+    com.utility:
+        Config.java
+        ConfigReader.java
+        ExcelReader.java
+        Utility.java
+        ExtentReportManager.java
+ 
 src/test/java:
-	com.apphooks:
-		ApplicationHooks.java
-	
-	com.step_defination1:
-		ShopPage_step_defination1.java
-		
-	com.step_defination2:
-		Ex01_Addtocart.java
-		
-	com.testrunner:
-		Ex01_ShopPage_Test_runner.java	
-		
-	com.testrunner:
-		Ex02_AddToCart_Test_runner.java	
-		
+    com.apphooks:
+        ApplicationHooks.java
+ 
+    com. step_defination1_stepdefinitions:
+        ShopPage_step_defination1.java
+    com. step_defination2_stepdefinitions:
+        Ex01_Addtocart.java
+    com. excel_stepdefinitions:
+        Ex01_Excel.java
+
+
+ 
+    com.testrunner:
+       Ex01_ShopPage_Test_runner.java    
+       Ex02_AddToCart_Test_runner.java 
+       Ex03_Excel.java   
+ 
 src/main/resources:
-	ReadMe
-						
+    ReadMe
+ 
 src/test/resources:
-	features folder
-		Ex01_ShopPage.feature	
-        Ex02_AddToCart.feature
+    features folder
+       Ex01_ShopPage.feature
+       Ex02_AddToCart.feature
+       Ex03_AddToCart_Excel.feature
+    testng.xml        
+ 
 drivers folder:
-	chromedriver.exe
-	
+    chromedriver.exe
+ 
 screenshots folder:
-	file.png	
-	
-pom.xml			
+    file.png    
+ 
+cucumber_report folder:
+    cucumber.html
+    cucumber.json
+    cucumber.xml
+ 
+extent_reports:
+    file.html
+ 
+pom.xml            
 --------------------------------------------------------------------------------------------------
 Project creation sequence:
-
+ 
 Create maven project
 Add the dependencies in pom.xml
 Maven project will have 4 sections by default(if not then create them):
-	src/main/java
-	src/main/resources
-	src/test/java
-	src/test/resources
-
+    src/main/java
+    src/main/resources
+    src/test/java
+    src/test/resources
+ 
 Create the required packages, classes, files in them as per below sequence:
-
+ 
 Step 1 --> Create Feature file
-Step 2 --> Create Config.java
-Step 3 --> Create Config.properties
-Step 4 --> Create ConfigReader.java
-Step 5 --> Create Utility.java
-
-Step 6 --> Create LandingPage.java
-Step 7 --> Create ShoppingPage.java
-Step 8 --> Create WallStickersPage.java
-Step 9 --> Create AddToCartPage.java
-Step 10 --> Create LandingPageSteps.java
-Step 11 --> Create ShoppingPageSteps.java
-Step 12 --> Create WallStickersPageSteps.java
-Step 13 --> Create AddToCartPageSteps.java
-Step 14 --> Create LandingPage_TestRunner.java
-Step 15 --> Create ShoppingPage_TestRunner.java
-Step 16 --> Create WallStickersPage_TestRunner.java
-Step 17 --> Create AddToCartPage_TestRunner.java
-
+Step 2 --> Create testdata.xlsx
+Step 3 --> Create Config.java
+Step 4 --> Create Config.properties
+Step 5 --> Create ConfigReader.java
+Step 6 --> Create ExtentReportManager.java
+Step 7 --> Create Utility.java
+Step 8 --> Create ExcelReader.java
+Step 9 --> Create LandingPage.java
+Step 10 --> Create ShoppingPage.java
+Step 11 --> Create WallStickersPage.java
+Step 12 --> Create AddToCartPage.java
+Step 13 --> Create ApplicationHooks.java
+Step 14 --> Create LandingPageSteps.java
+Step 15 --> Create ShoppingPageSteps.java
+Step 16 --> Create WallStickersPageSteps.java
+Step 17 --> Create AddToCartPageSteps.java
+Step 18 --> Create Ex01_ShopPage_Test_runner.java    
+Step 19 --> Create Ex02_AddToCart_Test_runner.java 
+Step 20 --> Create Ex03_Excel.java   
+Step 21 --> Create testng.xml
+ 
+ 
 Create the drivers folder and keep driver in it
 Create the screenshots folder to keep screenshots in it
 Run the tests by using Test class(individual test class) or testng.xml(all test classes) or pom.xml
  
-
+ 
 See the reports in test-output folder(created by testng)
 See the reports in target folder(created by maven)
 See the reports in cucumber_report folder(created by cucumber)
