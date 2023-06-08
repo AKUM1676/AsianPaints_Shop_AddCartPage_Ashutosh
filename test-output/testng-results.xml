@@ -1,151 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T15:46:18 IST" name="Default suite" finished-at="2023-06-08T15:47:16 IST" duration-ms="57608">
+  <suite started-at="2023-06-08T18:14:14 IST" name="Default suite" finished-at="2023-06-08T18:14:14 IST" duration-ms="615">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Ex03_Excel@48bb62]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Ex02_AddToCart_Test_runner@48bb62]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-08T15:46:18 IST" name="Default test" finished-at="2023-06-08T15:47:16 IST" duration-ms="57608">
-      <class name="testrunner.Ex03_Excel">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.Ex03_Excel@48bb62]" started-at="2023-06-08T15:46:18 IST" name="setUpClass" finished-at="2023-06-08T15:46:19 IST" duration-ms="1023" status="PASS">
+    <test started-at="2023-06-08T18:14:14 IST" name="Default test" finished-at="2023-06-08T18:14:14 IST" duration-ms="615">
+      <class name="testrunner.Ex02_AddToCart_Test_runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.Ex02_AddToCart_Test_runner@48bb62]" started-at="2023-06-08T18:14:14 IST" name="setUpClass" finished-at="2023-06-08T18:14:14 IST" duration-ms="542" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@251c8145]]>
+                <![CDATA[org.testng.TestRunner@2ece4966]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Ex03_Excel@48bb62]" started-at="2023-06-08T15:46:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-08T15:47:11 IST" duration-ms="52143" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate user is able to Add to Cart using valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add to Cart"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="io.cucumber.core.gherkin.FeatureParserException">
             <message>
-              <![CDATA[element click intercepted: Element <select id="sort-products">...</select> is not clickable at point (1160, 121). Other element would receive the click: <div class="collapse navbar-collapse header__navbar-content" id="headerNav">...</div>
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb080b46888e2876482ca44bf33bde4d, clickElement {id=02AC8602A492F254D8D5ACB795E41848_element_147}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:61311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61311/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (eb080b46888e2876482ca44bf33bde4d)] -> xpath: //*[@id="sort-products"]]
-Session ID: eb080b46888e2876482ca44bf33bde4d]]>
+              <![CDATA[Failed to parse resource at: file:///C:/Users/AKUM1676/eclipse-workspace/AsianPaints_Shop_AddCartPage_Ashutosh/src/test/resources/features/Ex02_AddToCart.feature
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '6Feature: Add to Cart'
+(3:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario Outline: Validate user is able to Add to Cart using valid data'
+(4:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given Chrome is opened and AsianPaints app is opened'
+(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Shop Section'
+(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User navigates on the Shop Page'
+(7:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User clicks on Wallstickers'
+(8:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User navigates to the Wallstickers page'
+(9:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on sort by Field'
+(10:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User selects Priority- Low to High'
+(11:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then Application sorts the wall stickers list based on price'
+(12:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User clicks on any particular sticker']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select id="sort-products">...</select> is not clickable at point (1160, 121). Other element would receive the click: <div class="collapse navbar-collapse header__navbar-content" id="headerNav">...</div>
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb080b46888e2876482ca44bf33bde4d, clickElement {id=02AC8602A492F254D8D5ACB795E41848_element_147}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:61311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61311/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (eb080b46888e2876482ca44bf33bde4d)] -> xpath: //*[@id="sort-products"]]
-Session ID: eb080b46888e2876482ca44bf33bde4d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+              <![CDATA[io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/AKUM1676/eclipse-workspace/AsianPaints_Shop_AddCartPage_Ashutosh/src/test/resources/features/Ex02_AddToCart.feature
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '6Feature: Add to Cart'
+(3:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario Outline: Validate user is able to Add to Cart using valid data'
+(4:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given Chrome is opened and AsianPaints app is opened'
+(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Shop Section'
+(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User navigates on the Shop Page'
+(7:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User clicks on Wallstickers'
+(8:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User navigates to the Wallstickers page'
+(9:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on sort by Field'
+(10:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User selects Priority- Low to High'
+(11:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then Application sorts the wall stickers list based on price'
+(12:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User clicks on any particular sticker'
+at io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:56)
+at io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:46)
+at java.base/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+at io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:122)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at com.pages.Ex03_WallStickersPage.filter(Ex03_WallStickersPage.java:29)
-at excel_stepdefinitions.Ex01_Excel.user_clicks_on_sort_by_field(Ex01_Excel.java:124)
-at ✽.User clicks on sort by Field(file:///C:/Users/AKUM1676/eclipse-workspace/AsianPaints_Shop_AddCartPage_Ashutosh/src/test/resources/features/Ex03_AddToCart_Excel.feature:9)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- io.cucumber.core.gherkin.FeatureParserException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Ex03_Excel@48bb62]" started-at="2023-06-08T15:47:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-08T15:47:16 IST" duration-ms="4227" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate user is able to Add to Cart using invalid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add to Cart"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f10b25faf0ad522001c7c63768651a98, get {url=https://www.asianpaints.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:61451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61451/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f10b25faf0ad522001c7c63768651a98]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f10b25faf0ad522001c7c63768651a98, get {url=https://www.asianpaints.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:61451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61451/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f10b25faf0ad522001c7c63768651a98
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.utility.Utility.launchingApp(Utility.java:44)
-at apphooks.ApplicationHooks.launchBrowser(ApplicationHooks.java:18)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.Ex03_Excel@48bb62]" started-at="2023-06-08T15:47:16 IST" name="tearDownClass" finished-at="2023-06-08T15:47:16 IST" duration-ms="138" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.Ex02_AddToCart_Test_runner@48bb62]" started-at="2023-06-08T18:14:14 IST" name="tearDownClass" finished-at="2023-06-08T18:14:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testrunner.Ex03_Excel -->
+      </class> <!-- testrunner.Ex02_AddToCart_Test_runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
